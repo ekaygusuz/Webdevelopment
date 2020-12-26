@@ -1,0 +1,12 @@
+.top-bar{
+  padding:3px 0;
+  background-color: black;
+font-size: 14px;
+color:#FF6F61;
+}
+
+
+.fa-blender-phone{
+  display:inline-flex;
+  text-align: right;
+}

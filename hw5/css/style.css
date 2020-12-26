@@ -1,0 +1,27 @@
+
+body{
+  background-color: #f7f9f9 !important;
+}
+
+
+.form-control{
+  display:flex !important;
+  border-color: #a76d60 !important;
+  border: 0.2rem solid #a76d60 !important;
+}
+.input-group-text{
+  background: #a76d60 !important;
+  color: #f7f9f9 !important;
+  border-color: #a76d60  !important;
+
+}
+.buton{
+  color: #601700 !important;
+  background: #f7f9f9 ;
+  border: 0.2rem solid #601700  !important;
+
+}
+.buton:hover {
+  background: #601700;
+  color: #f7f9f9 !important;
+}

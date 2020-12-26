@@ -1,0 +1,70 @@
+<script type="text/javascript">
+    // onclik işlemi genellikle attribute olarak eklenmez !!!! daha çok bu işlem javascript dosyasında yapılır.
+    var girisYapButonu = document.querySelector("button");
+    //onmousedown -> mouse ile bir elemente tıkladık ama elimizi mouseden kaldırmadık
+    girisYapButonu.onmousedown = function(){
+      elementeTiklaniyor();
+    }
+    //onmouseup -> tıkladık ve tıklamayı bitirdik
+    girisYapButonu.onmouseup = function(){
+      tiklamaBitiyor();
+    }
+    // onmouseout ya da onmouseleave -> mouse bir elementin üzerinden ayrılırsa..
+    girisYapButonu.onmouseout = function(){
+      ayrilmaUyari();
+    }
+    // onmousemove ya da onmouseover -> mouse bir elementin üzerine gelirse..
+    girisYapButonu.onmousemove = function(){
+      uyariVer();
+    }
+    // girisYapButonuna tıklandığında,girisYap fonksiyonu çağrılsın..
+    girisYapButonu.onclick = function() {
+      girisYap();
+    };
+    // girisYapButonuna sağ tıklandığında,uyariVer fonksiyonu çağrılsın..
+    girisYapButonu.oncontextmenu = function(){
+      uyariVer();
+    }
+    function ayrilmaUyari(){
+      //alert("mouse ayrıldı.");
+    }
+    function uyariVer(){
+      //alert("uyarı veriyorum.");
+    }
+    function elementeTiklaniyor(){
+      girisYapButonu.innerText = "Tıklanıyor..";
+    }
+    function tiklamaBitiyor(){
+      girisYapButonu.innerText = "Tıklandı !";
+    }
+    // 1. adım : Sign in butona tıklayınca çağrılacak olan "girisYap()" fonksiyonu oluşturun
+    //           ve sign in butonuna bunu ekleyin.
+    // 2. adım : email kutusunu ve şifre kutusunu document object model ile bulun.(id kullanarak)
+    // 3. adım : email kutusunun ve şifre konusunun içindeki yazıları alalım. ve oluşturacağımız 2 tane değişkene atayalım.
+    //           email ve sifre
+    //4. adım : eğer "email" değişkenin değeri "admin@admin.com" ve "sifre" değişkenin değeri "1234" ise
+    //          alert("giriş başarılı") değilse alert("giriş başarısız") oluşturalım.
+    //5. adım : eğer kullanıcı adı ya da şifre yanlışssa, 2017-2018 yazısının bulunduğu elementin yazısını
+    //          kullanıcı adı ya da şifre yanlış olarak değiştirelim.
+    //6. adım : eğer kullanıcı adı ve şifre doğruysa, form elementini sayfadan kaldıralım.
+    //7. adım : giriş başarılıysa, form elementini kaldırdıktan sonra, <h1>Hoşgeldin</h1> elementini body'ye ekleyelim.
+    var emailKutusu = document.getElementById("inputEmail");
+    var sifreKutusu = document.getElementById("inputPassword");
+    var sonucBolumu = document.querySelector(".mt-5.mb-3.text-muted");
+    var formElementi= document.querySelector("form");
+    var bodyElementi= document.querySelector("body");
+    function girisYap(){
+      // emailKutusu elementinin değerini al ve email değişkenine ekle.
+      var email = emailKutusu.value;
+      // sifreKutusu elementinin değerini al ve sifre değişkenine ekle.
+      var sifre = sifreKutusu.value;
+      if(email == "admin@admin.com"  &&  sifre == "1234" ){
+        // başarılı
+        formElementi.remove();
+        bodyElementi.innerHTML = "<h1>Hoşgeldin</h1>";
+      }else{
+        // başarısız
+        sonucBolumu.innerText = "E-Mail ya da Şifre yanlış.";
+      }
+    }
+  </script>

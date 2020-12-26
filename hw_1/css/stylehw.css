@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital@1&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.links a {
+  /*font-size: 2rem;
+  color: #457b9d;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 3px;
+  padding-right: 10px;
+  border: 3px solid #e9c46a;
+  border-radius: 5px;
+  background-color: white; */
+  font-size: 15px;
+  text-decoration: none;
+  padding: 5px;
+  border: 3px solid #06b7d8;
+  border-radius: 5px;
+  background-color: #a8dadc;
+  color: #000000;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 15px;
+}
+
+.links a:hover {
+  color: #14213d;
+  background-color: #457b9d;
+  border: 3px solid #1d3461;
+}
+
+.logo {
+  display: inline-block;
+  color: #1d3557;
+  border-radius: 20px;
+  margin: 10px;
+  font-family: 'Marck Script', cursive;
+
+}
+
+.containerfluid {
+  background-color: #e76f51;
+  color: white;
+  font-size: 3rem;
+  text-align: left;
+  padding: 10px;
+ position:sticky;
+ top:0;
+}
+
+.left-right-padding {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: #2a9d8f;
+}
+
+.links {
+  width: 40%;
+  float: right;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  background-color: #1d3557;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.pic1 {
+  width: 200px;
+  height: 250px;
+  border: 2px dashed;
+  border-radius: 0 0 50% 50%;
+}
+
+.pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 0 50% 50% 0;
+}
+
+.background {
+  top: 0;
+  border-radius: 20px;
+  border: 3px dashed #606c38;
+  background-color: #cffffe;
+  padding: 2% 2%
+}
+
+.bg2 {
+  margin: 2% 0;
+  /*margin-top: 2%; */
+  /*margin-bottom: 2%; */
+  border: 3px dashed #e76f51;
+  border-radius: 20px;
+  background: #f9f7d9;
+  padding: 2% 2%;
+}
+
+.bg3 {
+  border: 3px solid;
+  border-radius: 20px;
+  background: #fce2ce;
+  padding: 2% 2%;
+}
+
+.family {
+  padding-left: 2rem;
+}
+
+.bio {
+  padding-right: 2rem;
+}
+
+h1 {
+  border-left: 10px solid red;
+  padding-left: 10px;
+  background-color: #118ab240;
+  font-family: 'Grandstander', cursive;
+  text-align: center;
+}
+.sabit{
+  position:fixed;
+  right:10px;
+  bottom:10px;
+}
+
+.fourth {
+  background-color: #d90429;
+}
+
+/* enalt kisim */
+.containeralt {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footerbackgrund {
+  background-color: #232F3E;
+}
+
+.menu {
+  width: 25%;
+  padding: 15px;
+}
+
+.baslik {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu ul li {
+  list-style-type: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.menu ul li a {
+  color: #dddd;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.turnbacktop {
+  background-color: #485749;
+  padding: 10px;
+  text-align: center;
+}
+.altlink{
+  text-decoration: none;
+  color: #dddddd;
+}
+.altlink:hover{
+  text-decoration: underline;
+}
+.altlink:hover .turnbacktop{
+  background-color: #384759;
+}

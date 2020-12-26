@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #bd5d38;
+  height: 100%;
+  width: 17rem;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row{
+  margin-top: 20.5rem;
+}
+
+.img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-top: 8.8rem;
+  border: 0.5rem solid #ca7d60;
+  margin-bottom: 1.5rem;
+}
+
+.navbar-nav {
+  list-style: none;
+  letter-spacing: 0.05rem;
+  height: 100vh;
+}
+
+div .container a:link {
+  text-decoration: none !important;
+  opacity: 0.5 !important;
+}
+
+div .container a:hover {
+  opacity: 100% !important;
+}
+
+li {
+  padding-bottom: 1rem;
+  font-weight: 800;
+}
+
+.name_bar h1{
+  font-size: 6rem !important;
+  font-family: "Saira Extra Condensed" !important;
+  font-weight: 800 !important;
+  margin-left: 17rem;
+}
+
+
+.cv1 {
+  padding-top: 9.5rem;
+}
+
+.lastname {
+  color: #bd5d38;
+}
+
+.name_bar {
+  display: d-flex;
+  margin-left: 3rem;
+}
+
+.subheading {
+  font-family: "Saira Extra Condensed";
+  font-weight: 500 !important;
+  font-size: 1.5rem;
+  padding-top: 0 !important;
+  margin-left: 17rem;
+}
+
+.name {
+  margin-bottom: -0.55rem;
+}
+
+.story {
+  font-family: Muli !important;
+  font-size: 1.15rem;
+}
+
+.mail {
+  color: #bd5d38 !important;
+  text-decoration: none;
+}
+
+.medialink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+
+}
+
+.medialink:hover {
+  background-color: #bd5d38;
+  color: #fff;
+}
+.cv2 h2{
+  font-weight: 700;
+  font-size: 3rem;
+  color:#495057;
+  margin-top: 12rem;
+  margin-left: 15rem;
+
+}

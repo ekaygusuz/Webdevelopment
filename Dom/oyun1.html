@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Game</title>
+
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/oyun1.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="start" onclick="startGame" class="text-center p-3 m-3"> Start The Game! </h1>
+    <div class="game_section row">
+      <div class="col-6 d-flex justify-content-center flex-column align-items-center">
+        <h2>PLAYER 1</h2>
+        <img id="dice1" src="1.png" width="250" alt="">
+
+      </div>
+      <div class="col6 d-flex justify-content-center flex-column align-items-center">
+        <h2>PLAYER 2</h2>
+        <img"dice2" src="1.png" width="250" alt="">
+
+      </div>
+
+    <!-- </div>
+    <h4 id="result"> Result </h4>
+
+  </div> -->
+
+
+  <script type="text/javascript">
+    function startGame() {
+      var baslatElementi = document.querySelector("#start");
+      var player1dice = documnet.querySelector("#dice1");
+      var player2dice = documnet.querySelector("#dice2");
+      var result = document.querySelector("#result");
+
+      var randomNumber1 = Math.floor(Math.random() * 6) + 1; // 0-6 arasinda sayi uretir
+      var randomNumber2 = Math.floor(Math.random() * 6) + 1; // 0-6 arasinda sayi uretir
+
+      player1dice.setAttribute("src", randomNumber1 + ".png");
+      player2dice.setAttribute("src", randomNumber2 + ".png");
+
+
+
+    }
+  </script>
+
+
+
+</body>
+
+</html>

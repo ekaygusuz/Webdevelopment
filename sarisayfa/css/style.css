@@ -1,0 +1,182 @@
+/* Google'dan alinan fontlar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Body de bazi degisiklikler yapmak gerekti */
+body {
+  background-color: #FAD961;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../img/speaker.PNG);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
+a {
+  font-weight: 800 !important;
+  color: #1B1B1B;
+  text-decoration: none !important;
+}
+ .footer a:hover {
+   color: #1B1B1B;
+   background-color: #fff;
+ }
+
+ .footer a.black:hover {
+   color: #fff !important;
+   background-color: #1B1B1B !important;
+ }
+/* Logo uzerinde islem yatik */
+.logo {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* User resmine padding ekledik */
+.p-padding {
+  padding-left: 250px;
+}
+
+/* Dropdoiwn menu ayarlarini degistirdik */
+.dropdown-menu {
+  background-color: inherit;
+  color: #1B1B1B;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item:hover {
+  background-color: #6c757d;
+}
+
+/* Ust kisma ait sectionda duzenlemeler yaptik */
+.banner .container-fluid .row {
+  border: 2.5px solid #1B1B1B;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  width: 500px;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 700px;
+  top: 170px;
+  z-index: 0;
+}
+
+.banner .row i {
+  font-size: 1.3rem;
+}
+
+.pledged {
+  border-left: 1px solid #1B1B1B70;
+}
+
+.b-speaker {
+  font-size: 4rem;
+}
+
+/* orta kisimda yer alan sectionda duzenlemeler yaptik */
+.middle {
+  top: 250px;
+}
+
+.layer .card-img-top,
+.tools .card-img-top {
+  top: 39px;
+}
+
+.l-text,
+.t-text {
+  padding-left: 70px;
+}
+
+.layer .card-text,
+.tools .card-text {
+  width: 25%;
+}
+
+.middle img {
+  width: 49px;
+  height: 40px;
+}
+
+.card-padding {
+  padding-left: 100px;
+}
+
+.card {
+  background-color: inherit;
+  border: 0;
+  padding: 0;
+}
+
+.card-text,
+.copyright {
+  font-weight: 600;
+}
+
+/* En alt kisimdaki sectionda duzenlemeler yaptik */
+.footer {
+  top: 380px;
+  margin-top: 2rem;
+}
+.white{
+  color: #fff;
+}
+.fab {
+  color: #fff;
+}
+.fab:hover {
+  color: #1B1B1B;
+  background-color: #fff;
+}
+
+/* Bootsrtap ile ayarlayamadigim media kodlari */
+@media screen and (min-width:520px) and (max-width:720px) {
+  body {
+    background-color: #FAD961;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/speaker.PNG);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+  }
+
+  .banner .container-fluid .row {
+    border: 2px solid #1B1B1B;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    width: 500px;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 70px;
+    top: 250px;
+    z-index: 1;
+  }
+
+  .card {
+    background-color: inherit;
+    border: 0;
+  }
+  .footer{
+    top:250px;
+  }
+  .footer .container-fluid .col{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: #fff !important;
+    text-shadow: 2px 2px 2px #1B1B1B !important;
+    padding:0 !important;
+    margin: 0 !important;
+
+
+  }
+  .pledged {
+    border-left: 0 solid #1B1B1B70;
+  }
+  .icons{
+      text-align: center;
+  }
+}

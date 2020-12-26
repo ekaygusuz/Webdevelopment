@@ -1,0 +1,87 @@
+.common {
+  float: left;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.price{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color:white;
+  padding: 10px;
+}
+.dolar{
+  margin-bottom:10px;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.icon1 {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #5FB4FE 0%, #F439DA 100%);
+  border-radius: 50%;
+  font-size: 3.2rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon2 {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #FC20DA 0%, #FAEB7F 100%);
+  border-radius: 50%;
+  font-size: 3.2rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icon3 {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #9455F6 0%, #3EFB85 100%);
+  border-radius: 50%;
+  font-size: 3.2rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.first {
+  background-color: red;
+  width: 275px;
+  height: 400px;
+  background: linear-gradient(135deg, #5FB4FE 0%, #F439DA 100%);
+  margin-top: 35px;
+}
+
+.second {
+  width: 275px;
+  height: 440px;
+  background: linear-gradient(135deg, #FC20DA 0%, #FAEB7F 100%);
+}
+
+.third {
+  width: 275px;
+  height: 400px;
+  background: linear-gradient(135deg, #9455F6 0%, #3EFB85 100%);
+  margin-top: 35px;
+}

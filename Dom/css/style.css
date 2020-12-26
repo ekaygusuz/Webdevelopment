@@ -1,0 +1,15 @@
+.column{
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #bd5d38;
+  height: 100%;
+  width: 25%;
+  display: inline-block;
+  float: left;
+}
+img{
+  height: 200%;
+  width:100%;
+  border-radius: 50%;
+}

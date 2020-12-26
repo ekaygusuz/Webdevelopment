@@ -1,0 +1,338 @@
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, p {
+  color: #fff;
+}
+.basa-don{
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  color: rgba(255, 111, 97, .7);
+  border: 0.2rem solid rgba(255, 111, 97, .7);
+  border-radius: 50%;
+  z-index: 5;
+}
+.basa-don:hover{
+  color: #1ABC9C;
+}
+/*ortak classlar*/
+.r-l-padding {
+  padding-left: 15% !important;
+  padding-right: 15% !important;
+}
+
+.star,
+.black-star {
+  border-top: 0.3rem solid #fff;
+  width: 15%;
+  height: 15%;
+}
+
+.star-icon,
+.black-star-icon {
+  background-color: #1ABC9C;
+  position: absolute;
+  top: -1.2rem;
+  padding: 0 4%;
+  right: 40%;
+}
+
+.black-star {
+  border-top: 0.3rem solid #000;
+}
+
+.black-star-icon {
+  background-color: #fff;
+}
+.radius{
+  border-radius: 0.5rem;
+}
+/* ortak classlar bitis */
+/* Header kismi baslangic */
+.header a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: rgba(255, 111, 97, .7) !important;
+}
+
+.top-bar {
+  background: #1A252F !important;
+  color: #fff !important;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  margin: 0 !important;
+  padding: 1% 15% !important;
+}
+
+.profil {
+  background: #1ABC9C;
+  color: #fff;
+}
+
+.profil H1 {
+  font-weight: 700 !important;
+  font-size: 4rem;
+  margin: 2% 0%;
+}
+
+.profil h4 {
+  font-weight: 400;
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+}
+
+.profil img {
+  width: 25em;
+}
+
+.header .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Header kismi bitis */
+/*Portfolio kismi baslangic */
+.portfolio h2 {
+  padding: 1.5% 0;
+  color: #000;
+  font-weight: 700;
+}
+
+.p-folio .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.category {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.category .category-item {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  z-index: 0;
+}
+
+.category .category-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category .category-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 111, 97, .7);
+  /* (transition: all 0.3s;)  bu sure yuzunden + isareti
+  problem cikariyotdu.*/
+  border-radius: 0.5rem;
+}
+
+.category .category-name:hover {
+  border-radius: 0.5rem;
+  opacity: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.category .col-md-4.col-sm-12 {
+  position: relative;
+  width: 80%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+/* Portfolio kismi bitis */
+
+/* about baslangic */
+.about {
+  background: #1ABC9C;
+  color: #fff;
+  margin-top: 4%;
+}
+
+.about h2 {
+  padding-top: 5%;
+  padding-bottom: 1.5%;
+  font-weight: 700;
+}
+
+.about .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+/* about bitis */
+
+/* Contact baslangic */
+/* Contact bitis */
+.contact h2 {
+  padding-top: 5%;
+  padding-bottom: 1.5%;
+  font-weight: 700;
+  color: #000!important;
+}
+.r-l-padding-contact{
+  padding: 0 33%;
+}
+.form-control{
+  border: 0!important;
+  border-bottom:1px solid #ced4dd90!important;
+  padding: 7% 0!important;
+}
+.form-control:focus{
+  border-color: inherit!important;
+  box-shadow: 0 0 0 0!important;
+}
+.btn-success{
+  background: #1ABC9C!important;
+}
+.btn-success:hover{
+  background: #fff!important;
+  border: 1px solid #1ABC9C!important;
+}
+.btn {
+  padding: 0.7rem 0.9rem!important;
+}
+/* Footer kismi baslangic */
+.footer {
+  background: #2C3E50;
+}
+.footer .container{
+  padding-bottom: 5rem;
+}
+.footer h5 {
+  padding-top: 5rem;
+  padding-bottom: 1.5%;
+  font-weight: 700;
+}
+.padding-adress{
+  padding: 0 20%;
+}
+.padding-p{
+  padding: 0 10%;
+}
+.btn-social{
+  border-radius: 50%!important;
+}
+.bootstrap{
+  color: #1ABC9C;
+}
+.bootstrap:hover{
+  color: rgba(255, 111, 97, .7) !important;
+  text-decoration: none;
+  background: #2C3E50!important;
+}
+.copy-right {
+  background: #1A252F;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+/* Footer kismi bitis */
+
+/* Media Baslangic */
+@media (max-width:767px) {
+
+  /* starlar icin kodlar */
+  .black-star {
+    border-top: 0.3rem solid #000;
+  }
+
+  .star {
+    border-top: 0.3rem solid #fff;
+  }
+
+  /* starlar icin kodlar bitis */
+  /* Header Top-bar kismi icin icin media baslangic */
+  nav {
+    margin-left: 5% !important;
+    padding: 1% 5% !important;
+  }
+  .navbar-brand {
+    visibility: hidden;
+    position: relative;
+  }
+
+  .logo {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    visibility: visible;
+    position: absolute;
+    top: 0.3%;
+    left: 10%;
+    width: 30%;
+  }
+
+  /* Header Top-bar kismi icin icin media bitis*/
+
+  /* Header profil kismi icin icin media baslangic*/
+  .profil h1 {
+    font-size: 2rem;
+    padding: 5% 0;
+  }
+
+  .profil h4 {
+    font-size: 1rem;
+    padding: 5% 0;
+  }
+
+  .profil img {
+    width: 50%;
+  }
+
+  /* Header profil kismi icin icin media bitis*/
+
+  /* category media baslangic */
+  .category {
+    margin-left: 15%;
+  }
+  /* category media bitis */
+
+  /* about kismi media baslangic */
+  .about p{
+    text-align: center;
+  }
+  /* about kismi media bitis */
+}
+
+@media (min-width:768px) {
+  .logo {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+  }
+  .menu {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+  }
+}
+/* Media sonu */

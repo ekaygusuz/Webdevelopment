@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Document Object Model</title>
+    <!-- <script src="harici.js" charset="utf-8"></script> -->
+    <style media="screen">
+      .baslik-bolumu {
+        width:300px;
+        text-align: center;
+        border: 5px solid yellow;
+        background-color: blue;
+        border-radius : 50px;
+      }
+      .sari{
+        color: yellow;
+      }
+      h1 {
+      }
+      .deneme .cocuk{
+      }
+      .selam.cocuk {
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="baslik" class="sari">Merhabalar</h1>
+    <div class="aciklama ikinciclass" >Burası Document Object Model çalıştığımız sayfadır.</div>
+    <br>
+    <input type="checkbox">
+    <li>Gereksiz</li>
+    <button>Tıkla</button>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <script type="text/javascript">
+      var elementIsmi = document.getElementsByTagName("h1")[0];
+      elementIsmi.style.color = "red";
+      elementIsmi.style.fontSize = "3rem";
+    </script>
+  </body>
+</html>

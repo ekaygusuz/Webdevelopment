@@ -1,0 +1,109 @@
+.navbar {
+  padding: 0 1rem;
+}
+
+.arkaplan {
+  /* Permalink - use to edit and share this gradient:
+    http://colorzilla.com/gradient-editor/#1b4b4d+55,f3f66f+55,f3f66f+63,f1d15f+63,f1d15f+67,e8974a+67  background-color: #073b4c;*/
+  min-height: 100%;
+  background: #1b4b4d;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #1b4b4d 55%, #f3f66f 55%, #f3f66f 63%, #f1d15f 63%, #f1d15f 67%, #e8974a 67%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1b4b4d 55%, #f3f66f 55%, #f3f66f 63%, #f1d15f 63%, #f1d15f 67%, #e8974a 67%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1b4b4d 55%, #f3f66f 55%, #f3f66f 63%, #f1d15f 63%, #f1d15f 67%, #e8974a 67%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b4b4d', endColorstr='#e8974a', GradientType=0);
+  /* IE6-9 */
+}
+
+.topempty {
+  padding: 2% 5%;
+}
+
+.nav-radius {
+  border-radius: 1rem;
+}
+
+.navbar-brand {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Syne Mono', monospace;
+}
+
+.top-bottom {
+  padding: 45px 0;
+}
+
+.motto {
+  font-family: 'Itim', cursive;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 30%;
+}
+
+.fas {
+  color: #FFD166;
+  margin-bottom: 5%;
+}
+
+.fab {
+  color: #1d3557;
+}
+
+.fa-xbox {
+  color: #107C10;
+}
+
+.fa-steam {
+  color: #8ba8b7;
+}
+
+.fa-gamepad {
+  color: #ff7518;
+  margin-bottom: 0;
+}
+
+/*ekran min 768px veya buyukse kodlar calissin */
+@media (min-width: 768px) {
+  .title-pic {
+    width: 90%;
+    border-radius: 25%;
+  }
+}
+
+/*ekran max 767px veya kucukse kodlar calissin */
+@media (max-width: 767px) {
+  .title-pic {
+    margin-top: 20px;
+    width: 50%;
+    transform: rotate(0deg);
+  }
+
+  .downloads {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width:992px) {
+  .l-r-fluidpadding {
+    padding: 3% 15%;
+    background-color: #e5e5e5;
+  }
+}
+
+@media (max-width:991px) {
+  .l-r-fluidpadding {
+    padding: 3% 3%;
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width:1200px) {
+  .l-r-fluidpadding: {
+    padding: 3% 15%;
+    background-color: #e5e5e5;
+  }
+}

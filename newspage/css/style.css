@@ -1,0 +1,50 @@
+
+:root{
+  --main-color:orange;
+}
+
+body{
+  background-color: #f1faee;
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 1)),
+    url("https://i.pinimg.com/originals/5c/57/a8/5c57a8967bbd906f6a047e4c01adcc2a.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .navbar-dark .navbar-brand{
+  color: var(--main-color) !important;
+  font-weight: bold;
+  font-size: 1.8rem;
+
+}
+.popular-bar{
+  background-color: red;
+  color: white;
+
+
+}
+.economy{
+  border-left: 7px red solid;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+}
+.card{
+  border-radius: 2rem;
+}
+.card-img-top{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+/* .buton {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+   margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 100%;
+  float: right;
+} */
