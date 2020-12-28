@@ -64,7 +64,7 @@
   <form class="form-signin" onsubmit="return false">
     <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <label for="inputEmail" class="sr-only">Email address</label>
+    <label  for="inputEmail" class="sr-only">Email address</label>
     <input oninput="girisKontrol()" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
     <label for="inputPassword" class="sr-only">Password</label>
     <input oninput="girisKontrol()" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
@@ -199,3 +199,131 @@
   </script>
 </body>
 </html>
+<script type="text/javascript">
+
+var bodyElementi=document.querySelector("body");
+bodyElementi.class="text-center";
+
+var formElementi=document.createElement("form");
+formElementi.classList.add("form-signin");
+formElementi.onsubmit="return false";
+bodyElementi.appendChild(formElementi);
+
+// var resimElementi=document.createElement("img");
+// resimElementi.class="mb-4";
+// resimElementi.src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg";
+// resimElementi.width="72";
+// resimElementi.height="72"
+// formElementi.appendChild("resimElementi");
+
+
+var h1Elementi=document.querySelector("h1");
+var yazi=document.createTextNode("Please sign in");
+h1Elementi.appendChild("yazi");
+h1Elementi.class="h3 mb-3 font-weight-normal";
+formElementi.appendChild("h1Elementi");
+
+var emailLabel=document.createElement("label");
+var label1=document.createTextNode("Email address");
+emailLabel.appendChild("label1");
+emailLabel.class="sr-only";
+emailLabel.for="inputEmail";
+formElementi.appendChild("emailLabel");
+
+var emailInputElementi=document.createElement("input");
+emailInputElementi.oninput="girisKontrol()";
+emailInputElementi.type="email";
+emailInputElementi.id="inputEmail";
+emailInputElementi.class="form-control";
+emailInputElementi.placeholder="Email address";
+formElementi.appendChild("emailInputElementi");
+
+var passwordLabel=document.createElement("label");
+var passwordYazi=document.createTextNode("Password");
+passwordLabel.appendChild("passwordYazi");
+passwordLabel.for="inputPassword";
+passwordLabel.class="sr-only";
+formElementi.appendChild=("passwordLabel");
+
+var inputForPassword=document.createElement("input");
+inputPassword.oninput="girisKontrol()";
+inputPassword.type="password";
+inputPassword.id="inputPassword";
+inputPassword.class="form-control";
+inputForPassword. placeholder="Password";
+formElementi.appendChild("inputForPassword");
+
+var divElementi=document.createElement("div");
+divElementi.class="checkbox mb-3";
+formElementi.appendChild("divElementi");
+
+var labelCheckbox=document.createElement("label");
+var labelInput=document.createElement("input");
+labelCheckbox.appendChild("labelInput");
+divElementi.appendChild("labelCheckbox");
+
+var labelInputYazi=document.createTextNode("Remember me");
+labelInput.appendChild(labelInputYazi);
+labelInput.type="checkbox";
+labelInput.value="remember-me";
+
+var pEmailElementi=document.createElement("p");
+pEmailElementi.id="email-kontrol-yazisi";
+formElementi.appendChild("pEmailElementi");
+
+var pPasswordElementi=document.createElement("p");
+pPasswordElementi.id="sifre-kontrol-yazisi";
+formElementi.appendChild("pPasswordElementi");
+
+var pTarih=document.createElement("p");
+var pTarihYazi=document.createTextNode(" (C) 2017-2018");
+pTarih.appendChild("pTarihYazi");
+pTarih.class="mt-5 mb-3 text-muted";
+formElementi.appendChild(pTarih);
+
+emailKutusu.oninput = function() {girisKontrol()};
+sifreKutusu.oninput = function() {girisKontrol()};
+function girisKontrol(){
+  if(emailKutusu.value == "admin@admin.com"){
+      // email kontrol bölümüne - E-mail doğru
+      pMail.innerHTML = "E-Mail Doğru !";
+      pMail.classList.remove("text-danger");
+      pMail.classList.add("text-success");
+    }else{
+      // email kontrol bölümüne - E-mail hatalı
+      pMail.innerHTML = "E-Mail Hatalı !";
+      pMail.classList.remove("text-success");
+      pMail.classList.add("text-danger");
+    }
+    if(sifreKutusu.value == "1234"){
+      // şifre kontrol bölümüne - Şifre doğru
+      pSifre.innerHTML = "Şifre Doğru !";
+      pSifre.classList.remove("text-danger");
+      pSifre.classList.add("text-success");
+    }else{
+      // şifre kontrol bölümüne - Şifre hatalı
+      pSifre.innerHTML = "Şifre Hatalı !";
+      pSifre.classList.remove("text-success");
+      pSifre.classList.add("text-danger");
+    }
+    if(sifreKutusu.value == "1234" && emailKutusu.value == "admin@admin.com"){
+
+	formElementi.remove();
+      var hosgeldiniz = document.createElement("h1");
+      var yaziyeni = document.createTextNode("Hoşgeldiniz!");
+      hosgeldiniz.appendChild(yaziyeni);
+      hosgeldiniz.classList.add("text-primary");
+      document.body.appendChild(hosgeldiniz);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+</script>
